@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "954098231191",
+    "firebase_url": "https://pebble-c46e0.firebaseio.com",
+    "project_id": "pebble-c46e0",
+    "storage_bucket": "pebble-c46e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954098231191:android:d3faa29ec9ddcaa54186d2",
+        "android_client_info": {
+          "package_name": "com.stockpenguin.pebble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954098231191-nlkaflsggn9tcgqbb2lhq789s50t0nbo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpeKDGmavgJS4MUuP44jR_GXa5bjHSw4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954098231191-nlkaflsggn9tcgqbb2lhq789s50t0nbo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "954098231191-t70uoqdrl17qn5u34qvtpfgtak3h1o0b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.stockpenguin.pebble"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
