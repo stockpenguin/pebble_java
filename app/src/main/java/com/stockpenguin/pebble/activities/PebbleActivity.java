@@ -121,7 +121,16 @@ public class PebbleActivity extends AppCompatActivity {
 
             }
         };
-        database.child("conversations").orderByKey().startAt(getCurrentUserGeneratedId()).addValueEventListener(listener);
+
+        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        String displayName = FirebaseAuth.getInstance().getCurrentUser().getDisplayName();
+
+        database.child("conversations").orderByKey().startAt(uid).addValueEventListener(listener);
+        if (chats.isEmpty()) {
+            System.out.println("chats is empty");
+            database.child("conversations").orderByKey().startAt(uid).removeEventListener(listener);
+            database.child("conversations").orderByChild("user1Username").startAt(displayName).addValueEventListener(listener);
+        }
 
         /* set onClickListener for the search button, will open the BottomModalSheet */
         searchButton.setOnClickListener(new View.OnClickListener() {
